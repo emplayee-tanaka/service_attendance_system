@@ -1,2 +1,0 @@
-"use strict";(self["webpackChunkservice_attendance_system"]=self["webpackChunkservice_attendance_system"]||[]).push([[443],{4335:function(e,n,t){t.r(n),t.d(n,{default:function(){return f}});var s=t(3396);const a={class:"about"},c=(0,s._)("h1",null,"This is an about page",-1),r=[c];function u(e,n){return(0,s.wg)(),(0,s.iD)("div",a,r)}var i=t(89);const o={},d=(0,i.Z)(o,[["render",u]]);var f=d}}]);
-//# sourceMappingURL=about.7bce8df6.js.map
