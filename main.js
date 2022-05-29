@@ -37,7 +37,7 @@ $(function () {
     });
 
     $('#login_button').click(function() {
-        isCardIdGetted = !isCardIdGetted
+        isCardIdGetted = true
         name = "テスト太郎"
         account = "testtarou"
         password = "testpassword"
