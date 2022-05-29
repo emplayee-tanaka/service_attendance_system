@@ -39,6 +39,10 @@ $(function () {
         isCardIdGetted = false
     });
 
+    $('#login_button').click(function() {
+        document.getElementById('name').textContent = isCardIdGetted
+    });
+
 
     function getCardId() {
         //カード情報を保持してない時のみDBにカード情報を取りに行く
