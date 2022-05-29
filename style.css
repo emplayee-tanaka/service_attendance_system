@@ -48,14 +48,14 @@
   border: 3px solid blue;
   width: 200px;
   height: 80px;
-
+  font-size: 20px;
 }
 
 #password_text {
   border: 3px solid blue;
   width: 200px;
   height: 80px;
-
+  font-size: 20px;
 }
 
 #login_button {
