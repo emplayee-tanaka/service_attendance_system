@@ -61,7 +61,7 @@
 #login_button {
   border: 0px;
   background-color: olivedrab;
-  font-size: 30px;
+  font-size: 20px;
   color: white;
   width: 200px;
   height: 80px;
@@ -70,7 +70,7 @@
 #cacncel_button {
   border: 0px;
   background-color:lightgray;
-  font-size: 30px;
+  font-size: 20px;
   color: white;
   width: 200px;
   height: 80px;
