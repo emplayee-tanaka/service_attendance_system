@@ -40,6 +40,7 @@ $(function () {
     });
 
     $('#login_button').click(function() {
+        isCardIdGetted = !isCardIdGetted
         document.getElementById('name').textContent = isCardIdGetted
     });
 
