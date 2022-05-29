@@ -3,48 +3,75 @@
     height: 100px;
     line-height: 100px;
     text-align: center;
-  }
+}
     
-  #button_box {
-    height: 250px;
-    width: 900px;
-    display: flex;
-    justify-content: space-around;
-  }
-  
-  #attendance_button, #leaving_button {
-    width: 400px;
-    height: 200px;
-  }
-  #attendance_button {
-    background-color:royalblue;
-    font-size: 70px;
-    color: white;
-  }
-  #leaving_button {
-    background-color: orange;
-    font-size: 70px;
-    color: white;
-  }
+#button_box {
+  height: 250px;
+  width: 900px;
+  display: flex;
+  justify-content: space-around;
+}
 
-  
-  #lower_box {
-  }
+#attendance_button, #leaving_button {
+  width: 400px;
+  height: 200px;
+}
+#attendance_button {
+  border: 0px;
+  background-color:royalblue;
+  font-size: 70px;
+  color: white;
+}
+#leaving_button {
+  border: 0px;
+  background-color: orange;
+  font-size: 70px;
+  color: white;
+}
 
 
-  
-  #login_button {
-    background-color: olivedrab;
-    font-size: 30px;
-    color: white;
-    width: 200px;
-    height: 80px;
-  }
+#lower_box {
+  width: 900px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 
-  #cacncel_button {
-    background-color:lightgray;
-    font-size: 30px;
-    color: white;
-    width: 200px;
-    height: 80px;
-  }
+}
+
+.text_box {
+}
+.lower_text {
+  margin-top: 0px;
+  margin-bottom: 3px;
+}
+#account_text {
+  border: 3px solid blue;
+  width: 200px;
+  height: 80px;
+
+}
+
+#password_text {
+  border: 3px solid blue;
+  width: 200px;
+  height: 80px;
+
+}
+
+#login_button {
+  border: 0px;
+  background-color: olivedrab;
+  font-size: 30px;
+  color: white;
+  width: 200px;
+  height: 80px;
+}
+
+#cacncel_button {
+  border: 0px;
+  background-color:lightgray;
+  font-size: 30px;
+  color: white;
+  width: 200px;
+  height: 80px;
+}
