@@ -12,16 +12,24 @@ $(function () {
     startGetCardIdTimer()
 
     $('#attendance_button').click(function() {
-        alert(name + "さんが出勤しました")
-        initialize()
-        reloadDisplay()
-        isCardIdGetted = false
+        if (isCardIdGetted){
+            alert(name + "さんが出勤しました")
+            initialize()
+            reloadDisplay()
+            isCardIdGetted = false
+        } else {
+            alert("カードをかざしてください")
+        }
     });
     $('#leaving_button').click(function() {
-        alert(name + "さんが退勤しました")
-        initialize()
-        reloadDisplay()
-        isCardIdGetted = false
+        if (isCardIdGetted){
+            alert(name + "さんが退勤しました")
+            initialize()
+            reloadDisplay()
+            isCardIdGetted = false
+        } else {
+            alert("カードをかざしてください")
+        }
     });
 
     $('#cacncel_button').click(function() {
@@ -49,8 +57,8 @@ $(function () {
 
     function reloadDisplay() {
         document.getElementById('name').textContent = name
-        document.getElementById('account').value = account
-        document.getElementById('password').value = password
+        document.getElementById('account_text').value = account
+        document.getElementById('password_text').value = password
     }
 
     function startGetCardIdTimer() {
