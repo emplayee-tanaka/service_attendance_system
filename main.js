@@ -16,7 +16,6 @@ $(function () {
             alert(name + "さんが出勤しました")
             initialize()
             reloadDisplay()
-            isCardIdGetted = false
         } else {
             alert("カードをかざしてください")
         }
@@ -26,7 +25,6 @@ $(function () {
             alert(name + "さんが退勤しました")
             initialize()
             reloadDisplay()
-            isCardIdGetted = false
         } else {
             alert("カードをかざしてください")
         }
@@ -36,12 +34,14 @@ $(function () {
         alert("キャンセルされました")
         initialize()
         reloadDisplay()
-        isCardIdGetted = false
     });
 
     $('#login_button').click(function() {
         isCardIdGetted = !isCardIdGetted
-        document.getElementById('name').textContent = isCardIdGetted
+        name = "テスト太郎"
+        account = "testtarou"
+        password = "testpassword"
+        reloadDisplay()
     });
 
 
@@ -58,16 +58,17 @@ $(function () {
         name = "カードをかざしてください"
         account = ""
         password = ""
+        isCardIdGetted = false
     }
 
     function reloadDisplay() {
-        document.getElementById('name').textContent = name
+        document.getElementById('name').textContent = isCardIdGetted ? name + "さん" : name
         document.getElementById('account_text').value = account
         document.getElementById('password_text').value = password
     }
 
     function startGetCardIdTimer() {
-        getCardIdTimer = setInterval(getCardId,1000)
+        getCardIdTimer = setInterval(getCardId,2000)
     }
   
   });
