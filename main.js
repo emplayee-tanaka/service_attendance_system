@@ -88,12 +88,12 @@ $(function () {
         }
         if (gettedCardNumberArray.length){
           isCardIdGetted = true
-          if (gettedCardNumberArray[0] == 123){
+          if (gettedCardNumberArray[0] == 1181181542562211440){
               name = "田中　一郎さん"
               account = "tanaka_ichiro"
               password = "tanaka1rou"
               reloadDisplay()
-          } else if (gettedCardNumberArray[0] == 456){
+          } else if (gettedCardNumberArray[0] == 146721962032161221311440){
               name = "山田　二郎さん"
               account = "yamada_jiro"
               password = "yamada2rou"
