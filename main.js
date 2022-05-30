@@ -36,7 +36,15 @@ $(function () {
         reloadDisplay()
     });
 
-    $('#login_button').click(function() {
+    $('#login_button').click( async function() {
+
+        fetch('https://bj1ci45en5.execute-api.us-west-2.amazonaws.com/test', {
+        }).then(response => {
+            console.log(response);
+          });
+
+
+
         isCardIdGetted = true
         name = "テスト太郎"
         account = "testtarou"
@@ -49,7 +57,7 @@ $(function () {
         //カード情報を保持してない時のみDBにカード情報を取りに行く
         if (!isCardIdGetted){
             //ここでDBのカード番号を取得する処理
-            //取得出来たらname等に情報を格納、isCardIdGettedをtrueにする。DBのカード番号を削除する
+            //取得出来たらname等に情報を格納、isCardIdGettedをtrueにする、reloadDisplay()、DBのカード番号を削除する
             console.log("test")
         }
     }
